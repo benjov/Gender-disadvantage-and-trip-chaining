@@ -1,0 +1,17 @@
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Rhistory
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos temporales
+*.tmp
+*.bak

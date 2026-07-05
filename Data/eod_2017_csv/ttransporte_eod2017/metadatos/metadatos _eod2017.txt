@@ -1,0 +1,29 @@
+﻿Identifier: MEX-INEGI-EOD-2017-V01
+
+Title: Encuesta Origen Destino en Hogares de la Zona Metropolitana del Valle de México 2017
+
+Description: INEGI. Encuesta Origen Destino en Hogares de la Zona Metropolitana del Valle de México 2017.
+
+La Encuesta Origen Destino en Hogares de la Zona Metropolitana del Valle de México 2017 tiene como objetivo obtener información que permita conocer la movilidad actual de los habitantes de la ZMVM, respecto a sus características, motivo, duración, medios de transporte y horario de desplazamientos, entre otros aspectos de los viajes que realizan.
+
+Modified: 2018-02-19
+
+Publisher: Instituto Nacional de Estadística y Geografía, INEGI
+
+Mbox: atención.usuarios@inegi.org.mx
+
+License: http://www.inegi.org.mx/inegi/terminos.html
+
+DataDictionary: 
+
+Keyword: hogares, personas, viajes, movilidad, medios de transporte, ZMVM
+
+ContactPoint: Lic. José de Jesús Esquivel de la Rosa, 01800 111 4634
+
+Temporal: 2017-01-01-2017-12-31
+
+Spatial: Zona Metropolitana del Valle de México 
+
+AccrualPeriodicity: No determinada
+
+Distribution: https://www.inegi.org.mx/programas/eod/2017/

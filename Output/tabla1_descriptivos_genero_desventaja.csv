@@ -1,0 +1,5 @@
+Grupo,N_obs,N_expandido,Edad_media,Pct_trabaja,Pct_sin_auto,Pct_periferia,Pct_hay_menores,Viajes_dia,Pct_trip_chain,Paradas_media,Pct_care_trip
+Hombre | Desventaja,36078,3706787,31.2,57.2,87,59.1,52.9,1.53,2.4,0.03,3.3
+Hombre | Sin desventaja,60664,6383581,34.8,60,38.5,7.6,43,1.67,4.6,0.06,5.5
+Mujer | Desventaja,38789,3997530,33.2,36.3,88.3,57.9,54.3,1.65,4.1,0.05,14.3
+Mujer | Sin desventaja,64442,6783099,36.9,41.4,40.9,7.3,44.3,1.72,5.4,0.07,13.3

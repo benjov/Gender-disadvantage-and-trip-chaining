@@ -1,0 +1,7 @@
+x,y,r_weighted
+pct_chain_total,pct_desventaja,-0.243376686205514
+pct_chain_total,tiempo_med_dist,-0.24494867322385
+pct_chain_hombre,pct_desventaja,-0.312199256334006
+pct_chain_mujer,pct_desventaja,-0.157185056551611
+brecha_genero,pct_desventaja,0.155815742547974
+brecha_genero,pct_chain_total,0.298121696587087
