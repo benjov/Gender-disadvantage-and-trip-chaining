@@ -3,6 +3,17 @@
 # Fuente única: Scripts 0, 1 y 2 las cargan con source().
 # ============================================================
 
+ensure_csv <- function(csv_path) {
+  if (file.exists(csv_path)) return(csv_path)
+  zip_path <- paste0(csv_path, ".zip")
+  if (!file.exists(zip_path)) {
+    stop(sprintf("No se encontró el CSV ni su .zip: %s", csv_path))
+  }
+  cat("[ensure_csv] Descomprimiendo", zip_path, "\n")
+  unzip(zip_path, files = basename(csv_path), exdir = dirname(csv_path), junkpaths = TRUE)
+  csv_path
+}
+
 clean_names <- function(dt) {
   setnames(dt, names(dt), tolower(names(dt)))
   invisible(dt)
@@ -128,6 +139,8 @@ make_compact_table <- function(coef_dt, key_terms, model_order, model_labels) {
 }
 
 write_txt_table <- function(dt, file) {
+  old_width <- options(width = 200)
+  on.exit(options(old_width))
   lines <- capture.output(print(as.data.frame(dt), row.names = FALSE))
   writeLines(lines, con = file)
 }

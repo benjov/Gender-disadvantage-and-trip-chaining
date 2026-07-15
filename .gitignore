@@ -4,6 +4,8 @@
 .AppleDouble
 .LSOverride
 .Rhistory
+.RData
+.Rproj.user/
 
 # Editores
 .vscode/
@@ -12,6 +14,19 @@
 *.swo
 *~
 
+# Notas de trabajo locales (no forman parte del repo publicado)
+CLAUDE.md
+
 # Archivos temporales
 *.tmp
 *.bak
+
+# Salida gráfica por defecto de Rscript (print() de objetos ggplot sin
+# device explícito); las figuras reales se guardan vía ggsave() en Output/.
+Codigo/Rplots.pdf
+
+# Copias descomprimidas de las tablas EOD que se distribuyen como .zip
+# en el repo (tviaje y ttransporte superan/rozan el límite de GitHub).
+# El pipeline las descomprime bajo demanda; solo el .zip debe versionarse.
+Data/eod_2017_csv/tviaje_eod2017/conjunto_de_datos/tviaje.csv
+Data/eod_2017_csv/ttransporte_eod2017/conjunto_de_datos/ttransporte.csv

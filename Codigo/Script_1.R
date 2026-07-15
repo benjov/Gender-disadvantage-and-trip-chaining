@@ -19,7 +19,7 @@ source("00_funciones.R")
 # ============================================================
 
 if (!exists("base")) stop("Objeto 'base' no encontrado. Ejecuta Script_0 v4 primero.")
-cat("\n========== SCRIPT 2: Inicio ==========\n")
+cat("\n========== SCRIPT 1: Inicio ==========\n")
 
 # --- Limpia integraciones previas ---
 remove_cols <- c(
@@ -512,7 +512,7 @@ if (file.exists(shp_path)) {
 
 fwrite(base, file.path(out_dir, "base_analitica_final_script2.csv"))
 
-cat("\n===== SCRIPT 2 COMPLETO =====\n")
+cat("\n===== SCRIPT 1 COMPLETO =====\n")
 cat("Archivos generados en:", out_dir, "\n")
 cat("  - diag_desventaja_script2.csv\n")
 cat("  - tabla1_descriptivos_genero_desventaja.csv\n")

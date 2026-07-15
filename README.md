@@ -14,9 +14,9 @@ Script_2.R        Journal-version robustness + English figures (self-contained o
                   Script_1 CSV outputs): Firth logit, threshold sensitivity,
                   district correlations, Figure 1 EN, district maps EN.
 run_all.R         Runs the full pipeline in order.
-robustez.py       Optional: independent Python cross-validation of Script_2
-                  (reproduces M2 focal coefficients to 4 decimals).
-Data/             Raw public data (not redistributed; see below).
+Data/             Raw public data, bundled in this repo (see sources below).
+                  tviaje.csv and ttransporte.csv ship as .zip (GitHub file-size
+                  limit); Script_0.R auto-extracts them on first run.
 Output/           Outputs of Scripts 0-1.
 Output_journal/   Outputs of Script 2.
 ```
@@ -33,20 +33,23 @@ Set the repo root once: either run R with the working directory at the repo root
 | Threshold >=3 (9.0% pop.) | woman x disadvantage 0.374 (OR 1.45), p < 0.001 |
 | District correlations (194 districts, traveler-weighted) | chain x disadvantage r = -0.24 (men -0.31, women -0.16); gender gap x disadvantage r = +0.16 |
 
-## Data sources (public, not redistributed)
+## Data sources (public data, bundled in this repo)
 
-Place under `Data/` as follows:
+All raw inputs are public data, already included under `Data/` so the
+pipeline runs without any manual download step. Original sources, for
+citation and provenance:
 
-- `Data/eod_2017_csv/` — EOD 2017, INEGI: tables `tviaje`, `tsdem`, `thogar`, `ttransporte`. [download link]
-- `Data/Distritos_EOD_2017/` — shapefile of the 194 ZMVM transport districts. [download link]
-- CONEVAL municipal poverty (2015 measurement) and ENOE Municipal Labor Indicators 2017-Q1: paths as referenced in `Script_1.R`. [download links]
+- `Data/eod_2017_csv/` — EOD 2017, INEGI: tables `tviaje`, `tsdem`, `thogar`, `ttransporte`.
+- `Data/Distritos_EOD_2017/` — shapefile of the 194 ZMVM transport districts.
+- `Data/Concentrado_Pobreza/` — CONEVAL municipal poverty (2015 measurement).
+- `Data/ILMM/` — ENOE Municipal Labor Indicators 2017-Q1.
 
 ## Software
 
 - R >= 4.2: `data.table`, `survey`, `readxl`, `ggplot2`, `sf`, `MASS`, `scales`, `stargazer`, `logistf`.
-- Python >= 3.10 (optional cross-validation): `numpy`, `pandas`, `patsy`.
 
 ## Status
 
 - Scripts 0-2 fully executed end-to-end, including Section G: the four English maps and Figure 1 EN are in `Output_journal/`; Firth validated (max diff 0.00036).
+- Verified: a clean re-run of `run_all.R` reproduces every value in "Expected focal results" above exactly.
 - Pending: mint the repository DOI (Zenodo/OSF) and insert it in the manuscript Data availability statement.

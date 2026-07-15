@@ -11,11 +11,12 @@ library(stargazer)
 source("00_config.R")
 source("00_funciones.R")
 
-# inputs:
-tviaje <- fread(file.path(ruta, "tviaje_eod2017/conjunto_de_datos/tviaje.csv"))
+# inputs (tviaje y ttransporte se distribuyen como .zip en el repo;
+# ensure_csv() los descomprime la primera vez que se corre el pipeline):
+tviaje <- fread(ensure_csv(file.path(ruta, "tviaje_eod2017/conjunto_de_datos/tviaje.csv")))
 tsdem <- fread(file.path(ruta, "tsdem_eod2017/conjunto_de_datos/tsdem.csv"))
 thogar <- fread(file.path(ruta, "thogar_eod2017/conjunto_de_datos/thogar.csv"))
-ttrans <- fread(file.path(ruta, "ttransporte_eod2017/conjunto_de_datos/ttransporte.csv"))
+ttrans <- fread(ensure_csv(file.path(ruta, "ttransporte_eod2017/conjunto_de_datos/ttransporte.csv")))
 
 # clean data:
 clean_names(tviaje)
