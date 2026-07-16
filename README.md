@@ -2,6 +2,8 @@
 
 Replication materials for: Oliva Vázquez, B. & Tapia Reyes, J.E., "Care constraints override material disadvantage: gender, trip chaining, and household disadvantage in the Mexico City Metropolitan Area" (manuscript submitted to *Journal of Transport Geography*).
 
+Archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21385680.svg)](https://doi.org/10.5281/zenodo.21385680) (concept DOI, always resolves to the latest version; v1.0.0 is DOI 10.5281/zenodo.21385681).
+
 ## Repository structure
 
 ```
@@ -52,4 +54,4 @@ citation and provenance:
 
 - Scripts 0-2 fully executed end-to-end, including Section G: the four English maps and Figure 1 EN are in `Output_journal/`; Firth validated (max diff 0.00036).
 - Verified: a clean re-run of `run_all.R` reproduces every value in "Expected focal results" above exactly.
-- Pending: mint the repository DOI (Zenodo/OSF) and insert it in the manuscript Data availability statement.
+- Repository DOI minted on Zenodo (10.5281/zenodo.21385680, all versions) and inserted in the manuscript's Data availability statement.
